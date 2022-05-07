@@ -23,7 +23,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand">Practicas</a>
+            <a class="navbar-brand">DS 2-1 Programación 1</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,12 +35,17 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                            aria-expanded="false">Dropdown</a>
+                            aria-expanded="false">Lista 1</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="ejercicio1.html">Ejercicio 1</a></li>
-                            <li><a class="dropdown-item" href="ejercicio2.html">Ejercicio 2</a></li>
-                            <li><a class="dropdown-item disabled" href="#">Ejercicio 3</a></li>
-                            <li><a class="dropdown-item disabled" href="#">Ejercicio 4</a></li>
+                            <li><a class="dropdown-item active" href="ejercicio2.html">Ejercicio 2</a></li>
+                            <li><a class="dropdown-item" href="ejercicio3.html">Ejercicio 3</a></li>
+                            <li><a class="dropdown-item" href="ejercicio4.html">Ejercicio 4</a></li>
+                            <li><a class="dropdown-item" href="ejercicio5.html">Ejercicio 5</a></li>
+                            <li><a class="dropdown-item" href="ejercicio6.html">Ejercicio 6</a></li>
+                            <li><a class="dropdown-item" href="ejercicio7.html">Ejercicio 7</a></li>
+                            <li><a class="dropdown-item" href="ejercicio8.html">Ejercicio 8</a></li>
+                            <li><a class="dropdown-item" href="ejercicio9.html">Ejercicio 9</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -52,18 +57,26 @@
         </div>
     </nav>
 
+    <div class="container m-5">
+        <p class="fs-2">Consigna Ejercicio 2</p>
+
+        <textarea class="form-control mb-4" id="validationTextarea"
+            placeholder="En un programa PHP dar valores a tres variables que serán la medida de tres ángulos, indicar si corresponden a un triángulo. En caso de que así sea, indicar además si el triángulo es equilátero, isósceles, o escaleno. (Los ángulos interiores de un triángulo suman 180°. Los triángulos equiláteros tienen sus tres ángulos iguales; los isósceles, dos iguales y uno diferente; y los escalenos tienen sus tres ángulos distintos.)"
+            readonly rows="4"></textarea>
+    </div>
+
     <div class="container m-5 w-50">
 
-        <p class="fs-2">Ejercicio 2</p>
+        <p class="fs-2">Inputs</p>
         <form action="ejercicio2.php" method="GET">
             <div class="mb-3">
-                <input type="text" class="form-control" name="inputAng1" placeholder="Angulo 1">
+                <input type="number" class="form-control" name="inputAng1" placeholder="Angulo 1">
             </div>
             <div class="mb-3">
-                <input type="text" class="form-control" name="inputAng2" placeholder="Angulo 2">
+                <input type="number" class="form-control" name="inputAng2" placeholder="Angulo 2">
             </div>
             <div class="mb-3">
-                <input type="text" class="form-control" name="inputAng3" placeholder="Angulo 3">
+                <input type="number" class="form-control" name="inputAng3" placeholder="Angulo 3">
             </div>
             <button type="submit" class="btn btn-outline-primary">Ver Resultado</button>
         </form>
