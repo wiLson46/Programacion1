@@ -31,7 +31,7 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="nav nav-pills">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
@@ -56,8 +56,8 @@
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
               aria-expanded="false">Lista 2</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="ejercicio1.html">Ejercicio 131</a></li>
-              <li><a class="dropdown-item" href="ejercicio2.html">Ejercicio 241</a></li>
+              <li><a class="dropdown-item active" href="ejercicio131.html">Ejercicio 131</a></li>
+              <li><a class="dropdown-item" href="ejercicio241.html">Ejercicio 241</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
@@ -70,23 +70,27 @@
   </nav>
 
     <div class="container m-5">
-        <p class="fs-2">Consigna Ejercicio 1</p>
+        <p class="fs-2">Consigna Ejercicio 131</p>
 
         <textarea class="form-control mb-4" id="validationTextarea"
-            placeholder="En un programa PHP dar valores a dos variables que serán la base y la altura de un rectángulo. Calcular y mostrar su perímetro y superficie. Indicar, además, si el rectángulo es un cuadrado."
-            readonly rows="2"></textarea>
+            placeholder="Una distribuidora de libros vende a librerías y a particulares. Aplica bonificaciones por cantidad según el siguiente criterio: a) Librerías: hasta 24 unidades, el 20%; más de 24 unidades, el 25%. b) Particulares: menos de 6 unidades, nada; desde 6 hasta 18 unidades, el 5%; y más de 18 unidades, el 10%. El tipo de cliente está codificado: ‘L’ para librerías, ‘P’ para particular. Dado el importe bruto total de una compra de libros, el tipo de cliente y la cantidad total pedida por el mismo (que se ingresan en un programa HTML), determinar el importe bruto bonificado."
+            readonly rows="4"></textarea>
     </div>
 
     <div class="container m-5 w-50">
 
         <p class="fs-2">Inputs</p>
-        <form action="ejercicio1.php" method="GET">
+        <form action="ejercicio131.php" method="GET">
             <div class="mb-3">
-                <input type="number" class="form-control" name="inputLado1" placeholder="Lado 1">
+                <input type="number" class="form-control" name="inputImp" placeholder="Importe">
             </div>
             <div class="mb-3">
-                <input type="number" class="form-control" name="inputLado2" placeholder="Lado 2">
+                <input type="number" class="form-control" name="inputUni" placeholder="Unidades">
             </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" name="inputTipo" placeholder="Tipo de cliente">
+            </div>
+
             <button type="submit" class="btn btn-outline-primary">Ver Resultado</button>
         </form>
 
