@@ -1,20 +1,8 @@
 <?php
 
-$lad1 = $_GET["inputLado1"];
-$lad2 = $_GET["inputLado2"];
+$ingresoW = $_GET["inputW"];
 
-$per = ($lad1*2)+($lad2*2);
-$sup = ($lad1*2)*($lad2*2);
-
-echo "El perimetro es: " . $per . "<br>";
-echo "La superficie es: " . $sup . "<br>";
-
-if ( $lad1 == $lad2 ) {
-
-    echo "Es un Cuadrado" . "<br>";
-    } else {
-    echo "No es un cuadrado" . "<br>";
-        }
+echo "Z es igual a " . (1/(sqrt(2*pi())))*(exp(-(pow(2, $ingresoW)/2)));
 
 ?>
 
